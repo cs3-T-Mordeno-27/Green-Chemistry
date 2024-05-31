@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head> 
+    <title>Log In</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style2.css">
+	
+</head>
+	
+<body> 
+	<div class="login">
+		<h1>Login</h1>
+		<form>
+                <label>Username:  </label> 
+                <input id="uName" type="text" placeholder="" required>
+                <label>Password:  </label> 
+                <input id="pass" type="password"  placeholder="" required>
+				<input type="button" value="Submit" onclick="myfunc(event)">
+        </form>
+	</div>
+	
+	<p class="par2">Do not have an account? <a href="Signup.html">Sign Up Here :)</a></p>
+			
+	<script type="text/javascript">
+	function myfunc(event){
+			event.preventDefault();
+			
+			//not a functional log in page. ;))
+			var userName = document.getElementById("uName").value; 
+			var password = document.getElementById("pass").value;  
+			
+			var stored1 = localStorage.setItem("user_name", userName);
+			var stored3 = localStorage.setItem("pass_word", password);
+
+			
+			if (userName !== "" && password !== ""){
+				alert("Welcome back " + userName + "!");
+				window.location.assign("home.html");
+			}
+			else{
+				alert("Hmm, try again darling.");
+			}
+		}
+	</script>		
+</body>
+</html>

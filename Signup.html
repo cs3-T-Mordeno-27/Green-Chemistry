@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head> 
+    <title>Sign Up</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style2.css">
+	
+</head>
+	
+<body> 
+	<div class="signUp">
+		<h1>Welcome to the club, darling!</h1>
+		<h4>Just a few more steps...</h4>
+		<form>
+				<label>Username:  </label> 
+                <input id="uName" type="text" placeholder="" required>
+				<label>Age:  </label> 
+                <input id="age" type="number" placeholder="" required>
+                <label>Password:  </label> 
+                <input id="pass" type="password"  placeholder="" required>
+				<label> Confirm Password:  </label> 
+				<input id="conpass" type="password"  placeholder="" onchange="valPass()" required>
+				<label>Email:  </label> 
+                <input id="email" type="email" placeholder="" required>
+				<input type="button" value="Submit" onclick="myfunc(event)">
+				
+				
+        </form>
+	</div>
+	<p class="par2">Already have an account? <a href="Login.html">Log In :3</a></p>
+	
+	
+	
+	<script  type="text/javascript">
+		function valPass(){
+			var pass = document.getElementById("pass").value;
+			var conpass = document.getElementById("conpass").value;
+
+			if (pass !== conpass) {
+				document.getElementById("conpass").style.border = "2px solid red";	
+			} else{
+				document.getElementById("conpass").style.border = "1px solid black";
+			}
+		}
+		
+		function myfunc(event){
+			event.preventDefault();
+			
+			var userName = document.getElementById("uName").value; 
+			var age = document.getElementById("age").value;
+			var password = document.getElementById("pass").value;  
+			var conpassword = document.getElementById("conpass").value; 
+			var mail = document.getElementById("email").value; 
+			
+			var stored1 = localStorage.setItem("user_name", userName);
+			var stored2 = localStorage.setItem("user_age", age);
+			var stored3 = localStorage.setItem("pass_word", password);
+			var stored4 = localStorage.setItem("conpass_word", conpassword);
+			var stored5 = localStorage.setItem("email", mail);
+
+			
+			if (userName !== "" && age !== "" && password !== "" && conpassword !== "" && mail !== ""){
+				alert("Welcome " + userName + "!");
+				window.location.assign("home.html");
+			}else{
+				alert("Sign up first!");
+			}
+		}
+	</script>		
+</body>
+</html>
+
+

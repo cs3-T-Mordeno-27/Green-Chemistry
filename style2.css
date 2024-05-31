@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap');
+
+body{
+	background: linear-gradient(to right, #F4B5C7, #E0F6E3, #F4D0D5);
+	cursor:pointer;
+}
+.signUp{ /*style for the form bg*/
+	width:400px;
+	height:600px;
+	margin:auto;
+	background-color:white;
+	border-radius:10px;
+	padding-bottom:20px;
+	justify-content:center;
+	align-items:center;
+}
+.login{
+	width:380px;
+	height:330px;
+	margin:auto;
+	background-color:white;
+	border-radius:10px;
+	justify-content:center;
+	align-items:center;
+	display:center;
+}
+h1{
+	text-align:center;
+	font-family: "Poppins", sans-serif;
+	padding:15px;
+}
+h4{
+	font-family: "Barlow", sans-serif;
+	text-align:center;
+}
+form{
+	justify-content:center;
+	width:300px;
+	margin-left:20px;
+}
+form label{
+	display:flex;
+	margin-top: 20px;
+	font-family: "Barlow", sans-serif;
+	font-size:18px;
+	margin-left:10px;
+}
+form input{
+	width:100%;
+	padding: 7px;
+	border:none;
+	border:1px solid grey;
+	border-radius:6px;
+	outline:none;
+	margin-left:10px;
+	display:center;
+}
+input[type="button"]{ /*style for the button*/
+	width:320px;
+	height:35px;
+	margin-top:20px;
+	margin-left:10px;
+	border:none;
+	background-color:#BBF1C4;
+	color:black;
+	font-family: "Poppins", sans-serif;
+	font-weight:600;
+	font-size:18px;
+	align-items:center;
+}
+input[type="button"]:hover{
+	opacity:0.7
+}
+.par2{
+	text-align:center;
+	color:black;
+	font-size:18px;
+	margin-top:20px;
+}
+.par2 a{
+	color:#F49AC2;
+	text-decoration:none;
+}
+.par2 a:hover{
+	color: #77DD76;
+}

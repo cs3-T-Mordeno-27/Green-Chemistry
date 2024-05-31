@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap');
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	cursor:pointer;
+}
+.backvid{
+	position:absolute;	
+	width:1550px;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	opacity:0.9;
+}
+@media (min-aspect-ratio){
+	.backvid{
+		width:100%;
+		height:auto;
+	}
+}
+@media (max-aspect-ratio){
+	.backvid{
+		width:100%;
+		height:auto;
+	}
+}
+html{
+	scroll-behavior: smooth;
+}
+ul{
+	padding:1px;
+	list-style:none;
+	text-align:right;
+	background: linear-gradient(to right, #E0F6E3, #F49AC2);
+}
+ul li{
+	display: inline-block;
+	position:relative;
+	font-family: Arial;
+	font-weight: 100;
+	font-style: normal;
+}
+ul li a{
+	display: block;
+	padding: 20px 25px;
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+	font-size: 18px;
+	font-weight:500px;
+}
+ul li ul.drop li{
+	display: block;
+}
+ul li ul.drop{
+	width:100%;
+	background:#F4B5C7;
+	position:absolute;
+	z-index:999;
+	display:none;
+}
+ul li a:hover{
+	background:#F4D0D5;
+}
+ul li:hover ul.drop{
+	display:block;
+}
+h1{
+	justify-content:center;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 100px;
+	background: linear-gradient(to right, #77DD76, #BBF1C4, #F49AC2);  /*gradient for the title*/
+		-webkit-text-fill-color: transparent; 
+		-webkit-background-clip: text; 
+	margin-top: 80px;	
+}
+h3{
+	justify-content:center;
+	text-align: center;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 28px;
+	font-weight: 200px;
+	color:#F1EAEA; 
+	text-shadow: black 1px 1px;	
+}
+#greeting-box{
+	display:inline-block;
+	background: linear-gradient(to right, #E0F6E3, #F4D0D5); 
+	margin-left:150px;
+	margin-right:150px;
+	padding:20px;
+	border-radius:90px;
+}
+#greeting{
+	text-align:center;
+	justify-content:center; 
+	font-family: "Barlow", sans-serif;
+	font-size:20px;
+}
+#defin{
+	margin-top: 230px;
+}	
+#princip{
+	margin-top: 120px;
+	padding-bottom:50px;
+}
+#applications{
+	margin-top: 120px;
+}
+.heading{
+	text-align:center;
+	justify-content:center; 
+	font-family: "Poppins", sans-serif;
+	font-size:80px;
+	font-weight:bold;
+	background: linear-gradient(to right, #F49AC2, #77DD76, #F4B5C7); 
+		-webkit-text-fill-color: transparent; 
+		-webkit-background-clip: text; 
+	margin: 20px;
+}
+#head2{
+	padding-top:100px;
+}
+#headText{
+	text-align:center;
+	justify-content:center; 
+	font-family: "Barlow", sans-serif;
+	font-size:20px;
+	margin-left:90px;
+	margin-right:90px;
+	margin-bottom:80px;
+}
+#img1{
+	width:700px; 
+	height:400px;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:30px;
+	border-radius:15px;
+}
+.wrap{
+	display:flex;
+	box-sizing:border-box;
+	justify-content:center;
+	align-items:center;
+	margin:40px 160px;
+	width:80%;
+}
+.prev{
+	width:550px;
+	height:270px;
+	border: 5px solid white;
+	border-radius:15px;
+	margin-right:15px;
+}
+.text{
+	color:black;
+}
+.text h2{
+	font-family: "Poppins", sans-serif;
+	font-size:42px;
+}
+.text p{
+	font-family: "Barlow", sans-serif;
+	font-size:20px;
+}
+#head3{
+	margin-top: 70px;
+}
+#application{
+	text-align:center;	
+}
+/*css for the application part*/
+.contain img{ 
+	display:flex;
+	max-width:100%;
+	height:500px;
+}
+.contain{
+	display:inline-block;
+	margin-inline:1.5rem;
+	padding-block:5rem;
+}
+.contain-card{
+	display:grid;
+	row-gap:3.5rem;	
+}
+.card-art{
+	position:relative;
+	overflow:hidden;
+}
+.card-img{
+	width:350px;
+	border-radius:1.5rem;
+}
+.card-data{
+	width:280px;
+	padding: 1.5rem 2rem;
+	box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+	border-radius:1rem;
+	background: linear-gradient(to right, #F4B5C7, #E0F6E3, #F4B5C7); 
+	text-align:left;	
+	position:absolute;
+	bottom:-9rem;
+	left:0;
+	right:0;
+	margin-inline:auto;
+	opacity:0; /*hides the text inside the image*/
+	transition: opacity 1s 1s;
+}
+.desc{
+	display:inline-block;
+	font-family: "Barlow", sans-serif;
+	color:black; 
+	font-size:15px;
+	margin-bottom: .25rem;
+	padding-bottom:5px;
+}
+.title{
+	font-family: "Poppins", sans-serif;
+	font-size:25px;
+	font-weight:bold;
+	color:Black;
+	margin-bottom:.75rem;
+}
+.button{
+	float:right;	
+	text-decoration:none;
+	font-family: "Barlow", sans-serif;
+	font-size:15px;
+	font-weight:500; 
+	color:#7393B3; 
+}
+.button:hover{
+	text-decoration:none;
+	font-family: "Barlow", sans-serif;
+	font-size:15px;
+	font-weight:bold; 
+	color:#E0F6E3; 
+	text-shadow: lightgrey 1px 1px;
+}
+.button:hover{
+	text-decoration: underline;
+}
+.card-art:hover .card-data{ /*start of the animation*/
+	animation:show-data 1s forwards;
+	opacity:1;
+	transition: opacity .3s;
+}
+.card-art:hover{
+	animation: remove-overflow 2s forwards;
+}
+.card-art:not(:hover){
+	animation:show-overflow 2s forwards;
+}
+.card-art:not(:hover) .card-data{
+	animation:remove-data 1s forwards;
+}
+@keyframes show-data{ 
+	50%{
+		transform: translateY(-10rem);
+	}
+	100%{
+		transform: translateY(-7rem);
+	}
+}
+@keyframes remove-overflow{
+	to{
+		overflow:initial;
+	}
+}
+@keyframes remove-data{
+	0%{
+		transfrom: translateY(-7rem);
+	}
+	50%{
+		transfrom: translateY(-10rem);
+	}
+	100%{
+		transfrom: translateY(.5rem);
+	}
+}
+@keyframes show-oveflow{
+	0%{
+		overflow:initial;
+		pointer-events: none;
+	}
+	50%{
+		overflow:hidden;
+	}
+} 
+/*end of the animation*/
